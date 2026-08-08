@@ -7,7 +7,6 @@ public class ProjectInstaller : MonoInstaller
     {
         Container.Bind<MapHolder>().AsSingle();
 
-        Container.Bind<Player>().AsSingle().NonLazy();
         Container.Bind<PlayerStorage>().AsSingle().NonLazy();
     }
 }

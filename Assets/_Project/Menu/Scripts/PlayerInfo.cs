@@ -13,6 +13,7 @@ public class PlayerInfo : MonoBehaviour
     public void SetPlayer(Player player)
     {
         _dedicatedPlayer = player;
+        _nameInputField.text = player.Name;
 
         _nameInputField.OnValueChangedAsObservable()
             .Subscribe(name => _dedicatedPlayer.Name = name)
